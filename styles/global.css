@@ -22,12 +22,18 @@ img {
     margin: 20px;
 }
 
-#dropdown-section, #img-section, #slogan-section, #stats-section {
+#dropdown-section, #img-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#slogan-section, #stats-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
-
