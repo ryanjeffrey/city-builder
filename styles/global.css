@@ -17,10 +17,17 @@ main {
     height: 100vh;
 }
 
+img {
+    height: 200px;
+    margin: 20px;
+}
+
 #dropdown-section, #img-section, #slogan-section, #stats-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
