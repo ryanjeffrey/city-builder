@@ -19,6 +19,8 @@ let timesTropicalChanged = 0;
 let timesMetropolitanChanged = 0;
 let timesCountrysideChanged = 0;
 
+let slogans = ['The city that never sleeps', 'The golden city', 'The windy city'];
+
 // set event listeners 
 tropicalDropdownEl.addEventListener('change', () => {
     // get user input
