@@ -26,7 +26,7 @@ tropicalDropdownEl.addEventListener('change', () => {
     // update DOM to reflect the new state
     tropicalImageEl.src = `/assets/${tropicalDropdownEl.value}.png`;
     timesTropicalChanged++;
-    console.log('Tropical has been changed ' + timesTropicalChanged + ' times.');
+    timesChangedEl.textContent = 'Tropical has been changed ' + timesTropicalChanged + ' times.';
 });
 
 metropolitanDropdownEl.addEventListener('change', () => {
@@ -35,7 +35,7 @@ metropolitanDropdownEl.addEventListener('change', () => {
     // update DOM to reflect the new state
     metropolitanImageEl.src = `/assets/${metropolitanDropdownEl.value}.png`;
     timesMetropolitanChanged++;
-    console.log('Metropolitan has been changed ' + timesMetropolitanChanged + ' times.');
+    timesChangedEl.textContent = 'Metropolitan has been changed ' + timesMetropolitanChanged + ' times.';
 });
 
 countrysideDropdownEl.addEventListener('change', () => {
@@ -44,5 +44,5 @@ countrysideDropdownEl.addEventListener('change', () => {
     // update DOM to reflect the new state
     countrysideImageEl.src = `/assets/${countrysideDropdownEl.value}.png`;
     timesCountrysideChanged++;
-    console.log('Countryside has been changed ' + timesCountrysideChanged + ' times.');
+    timesChangedEl.textContent = 'Countryside has been changed ' + timesCountrysideChanged + ' times.';
 });
