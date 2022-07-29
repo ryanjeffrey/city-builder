@@ -14,6 +14,8 @@ const tropicalImageEl = document.getElementById('tropical-img');
 const metropolitanImageEl = document.getElementById('metropolitan-img');
 const countrysideImageEl = document.getElementById('countryside-img');
 
+const sloganButton = document.getElementById('slogan-button');
+
 // let state
 let timesTropicalChanged = 0;
 let timesMetropolitanChanged = 0;
