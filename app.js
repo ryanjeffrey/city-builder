@@ -12,8 +12,6 @@ const tropicalImageEl = document.getElementById('tropical-img');
 const metropolitanImageEl = document.getElementById('metropolitan-img');
 const countrysideImageEl = document.getElementById('countryside-img');
 
-console.log(dropdownSectionEl, statsSectionEl, imageSectionEl, sloganSectionEl, tropicalDropdownEl, metropolitanDropdownEl, countrysideDropdownEl, tropicalImageEl, metropolitanImageEl, countrysideImageEl);
-
 // let state
 let timesTropicalChanged = 0;
 let timesMetropolitanChanged = 0;
@@ -25,6 +23,8 @@ tropicalDropdownEl.addEventListener('change', () => {
     // use user input to update state 
     // update DOM to reflect the new state
     tropicalImageEl.src = `/assets/${tropicalDropdownEl.value}.png`;
+    timesTropicalChanged++;
+    console.log('Tropical has been changed ' + timesTropicalChanged + ' times.');
 });
 
 metropolitanDropdownEl.addEventListener('change', () => {
@@ -32,6 +32,8 @@ metropolitanDropdownEl.addEventListener('change', () => {
     // use user input to update state 
     // update DOM to reflect the new state
     metropolitanImageEl.src = `/assets/${metropolitanDropdownEl.value}.png`;
+    timesMetropolitanChanged++;
+    console.log('Metropolitan has been changed ' + timesMetropolitanChanged + ' times.');
 });
 
 countrysideDropdownEl.addEventListener('change', () => {
@@ -39,4 +41,6 @@ countrysideDropdownEl.addEventListener('change', () => {
     // use user input to update state 
     // update DOM to reflect the new state
     countrysideImageEl.src = `/assets/${countrysideDropdownEl.value}.png`;
+    timesCountrysideChanged++;
+    console.log('Countryside has been changed ' + timesCountrysideChanged + ' times.');
 });
