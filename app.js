@@ -52,6 +52,14 @@ countrysideDropdownEl.addEventListener('change', () => {
     displayStats();
 });
 
+// set event listeners for slogans
+sloganButton.addEventListener('click', () => {
+    const newSlogan = sloganInputEl.value;
+    slogans.push(newSlogan);
+
+    console.log(slogans);
+});
+
 function displayStats() {
     timesChangedEl.textContent = `Tropical has been changed ${timesTropicalChanged} times. Metropolitan has been changed ${timesMetropolitanChanged} times. Countryside has been changed ${timesCountrysideChanged} times.`;
 }
