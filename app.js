@@ -16,6 +16,7 @@ const countrysideImageEl = document.getElementById('countryside-img');
 
 const sloganButton = document.getElementById('slogan-button');
 const sloganInputEl = document.getElementById('slogan-input');
+const slogansEl = document.getElementById('slogans');
 
 // let state
 let timesTropicalChanged = 0;
