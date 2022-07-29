@@ -75,3 +75,5 @@ function displaySlogans() {
         slogansEl.append(newSloganEl);
     }
 }
+
+displaySlogans();
