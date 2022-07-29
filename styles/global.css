@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(255, 255, 255);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
 }
@@ -7,29 +7,63 @@
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--header-background);
-}
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
+    display: grid;
+    grid-template-rows: .2fr 1fr .3fr .3fr 1fr;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
+img {
+    height: 200px;
+}
+
+h3, p {
+    margin: 4px;
+    font-size: 16px;
+}
+
+label {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+select {
+    font-size: 16px;
+    padding: 8px;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropdown-section, #img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#slogan-section, #stats-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+#slogan-section {
+    height: 200px;
+}
+
+#slogan-button {
+    margin-top: 8px;
 }

@@ -12,20 +12,63 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>City Builder</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        
     </header>
 
     <main>
+        <h1 id="heading">City Builder</h1>
+        <section id="img-section">
+            <img src="assets/kingston.png" alt="tropical landscape" id="tropical-img">
+            <img src="assets/chicago.png" alt="metropolitan area" id="metropolitan-img">
+            <img src="assets/cinque-terre.png" alt="countryside" id="countryside-img">
+        </section>
+        <section id="dropdown-section">
+            <label>Tropical:
+                <select id="tropical-dropdown">
+                    <option value="kingston">Kingston</option>
+                    <option value="belize-city">Belize City</option>
+                    <option value="basseterre">Basseterre</option>
+                </select>
+            </label>
+            
+            <label>Metropolitan:
+                <select id="metropolitan-dropdown">
+                    <option value="chicago">Chicago</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </label>
 
+            <label>Countryside:
+                <select id="countryside-dropdown">
+                    <option value="cinque-terre">Cinque Terre</option>
+                    <option value="mt-diablo">Mt. Diablo</option>
+                    <option value="zurich">Zurich</option>
+                </select>
+            </label>
+        </section>
+        <section id="stats-section">
+            <h3>Stats:</h3>
+            <p id="times-changed"></p>
+        </section>
+        
+        <section id="slogan-section">
+            <h3>Slogans:</h3>
+            <input id="slogan-input">
+            <button id="slogan-button">Add Slogan</button>
+            <div id="slogans">
+
+            </div>
+        </section>
+        
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+    <footer></footer>
 
     <script type="module" src="app.js"></script>
 </body>
