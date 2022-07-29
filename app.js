@@ -58,9 +58,17 @@ sloganButton.addEventListener('click', () => {
     const newSlogan = sloganInputEl.value;
     slogans.push(newSlogan);
 
-    console.log(slogans);
+    displaySlogans();
 });
 
 function displayStats() {
     timesChangedEl.textContent = `Tropical has been changed ${timesTropicalChanged} times. Metropolitan has been changed ${timesMetropolitanChanged} times. Countryside has been changed ${timesCountrysideChanged} times.`;
+}
+
+function displaySlogans() {
+    for (let slogan of slogans) {
+        const newSloganEl = document.createElement('p');
+        newSloganEl.textContent = slogan;
+        slogansEl.append(newSloganEl);
+    }
 }
