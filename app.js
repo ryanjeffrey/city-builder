@@ -4,6 +4,8 @@ const statsSectionEl = document.getElementById('stats-section');
 const imageSectionEl = document.getElementById('img-section');
 const sloganSectionEl = document.getElementById('slogan-section');
 
+const timesChangedEl = document.getElementById('times-changed');
+
 const tropicalDropdownEl = document.getElementById('tropical-dropdown');
 const metropolitanDropdownEl = document.getElementById('metropolitan-dropdown');
 const countrysideDropdownEl = document.getElementById('countryside-dropdown');
