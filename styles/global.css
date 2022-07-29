@@ -11,24 +11,25 @@ body {
 
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .4fr .2fr 1fr;
     height: 100vh;
 }
 
 img {
     height: 200px;
-    margin: 20px;
 }
 
 #dropdown-section, #img-section {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin: 40px;
+    justify-content: space-around;
+}
+
+#img-section {
 }
 
 #slogan-section, #stats-section {
@@ -36,4 +37,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#slogan-button {
+    margin-top: 8px;
 }
