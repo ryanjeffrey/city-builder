@@ -15,6 +15,7 @@ const metropolitanImageEl = document.getElementById('metropolitan-img');
 const countrysideImageEl = document.getElementById('countryside-img');
 
 const sloganButton = document.getElementById('slogan-button');
+const sloganInputEl = document.getElementById('slogan-input');
 
 // let state
 let timesTropicalChanged = 0;
@@ -23,7 +24,7 @@ let timesCountrysideChanged = 0;
 
 let slogans = ['The city that never sleeps', 'The golden city', 'The windy city'];
 
-// set event listeners 
+// set event listeners for dropdowns
 tropicalDropdownEl.addEventListener('change', () => {
     // get user input
     // use user input to update state 
