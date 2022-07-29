@@ -66,6 +66,9 @@ function displayStats() {
 }
 
 function displaySlogans() {
+    slogansEl.textContent = '';
+    sloganInputEl.value = '';
+
     for (let slogan of slogans) {
         const newSloganEl = document.createElement('p');
         newSloganEl.textContent = slogan;
