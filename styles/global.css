@@ -13,12 +13,31 @@ body {
 main {
     /* padding: 20px; */
     display: grid;
-    grid-template-rows: .2fr 1fr .2fr .2fr 1fr;
+    grid-template-rows: .2fr 1fr .3fr .3fr 1fr;
     /* height: 100vh; */
 }
 
 img {
     height: 200px;
+}
+
+h3, p {
+    margin: 4px;
+    font-size: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+select {
+    font-size: 16px;
+    padding: 8px;
 }
 
 #heading {
@@ -42,6 +61,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 16px;
+}
+
+#slogan-section {
+    height: 200px;
+    overflow: visible;
+}
+
+.slogan-style {
+    font-size: 8px;
 }
 
 #slogan-button {
