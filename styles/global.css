@@ -13,17 +13,22 @@ body {
 main {
     /* padding: 20px; */
     display: grid;
-    grid-template-rows: 1fr .4fr .2fr 1fr;
-    height: 100vh;
+    grid-template-rows: .2fr 1fr .2fr .2fr 1fr;
+    /* height: 100vh; */
 }
 
 img {
     height: 200px;
 }
 
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #dropdown-section, #img-section {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     justify-content: space-around;
