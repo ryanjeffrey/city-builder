@@ -17,6 +17,23 @@ console.log(dropdownSectionEl, statsSectionEl, imageSectionEl, sloganSectionEl, 
 // let state
 
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+tropicalDropdownEl.addEventListener('change', () => {
+    // get user input
+    // use user input to update state 
+    // update DOM to reflect the new state
+    tropicalImageEl.src = `/assets/${tropicalDropdownEl.value}.png`;
+});
+
+metropolitanDropdownEl.addEventListener('change', () => {
+    // get user input
+    // use user input to update state 
+    // update DOM to reflect the new state
+    metropolitanImageEl.src = `/assets/${metropolitanDropdownEl.value}.png`;
+});
+
+countrysideDropdownEl.addEventListener('change', () => {
+    // get user input
+    // use user input to update state 
+    // update DOM to reflect the new state
+    countrysideImageEl.src = `/assets/${countrysideDropdownEl.value}.png`;
+});
