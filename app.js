@@ -1,11 +1,4 @@
 // import functions and grab DOM elements
-const dropdownSectionEl = document.getElementById('dropdown-section');
-const statsSectionEl = document.getElementById('stats-section');
-const imageSectionEl = document.getElementById('img-section');
-const sloganSectionEl = document.getElementById('slogan-section');
-
-const timesChangedEl = document.getElementById('times-changed');
-
 const tropicalDropdownEl = document.getElementById('tropical-dropdown');
 const metropolitanDropdownEl = document.getElementById('metropolitan-dropdown');
 const countrysideDropdownEl = document.getElementById('countryside-dropdown');
@@ -13,6 +6,8 @@ const countrysideDropdownEl = document.getElementById('countryside-dropdown');
 const tropicalImageEl = document.getElementById('tropical-img');
 const metropolitanImageEl = document.getElementById('metropolitan-img');
 const countrysideImageEl = document.getElementById('countryside-img');
+
+const timesChangedEl = document.getElementById('times-changed');
 
 const sloganButton = document.getElementById('slogan-button');
 const sloganInputEl = document.getElementById('slogan-input');
