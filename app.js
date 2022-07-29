@@ -15,6 +15,9 @@ const countrysideImageEl = document.getElementById('countryside-img');
 console.log(dropdownSectionEl, statsSectionEl, imageSectionEl, sloganSectionEl, tropicalDropdownEl, metropolitanDropdownEl, countrysideDropdownEl, tropicalImageEl, metropolitanImageEl, countrysideImageEl);
 
 // let state
+let timesTropicalChanged = 0;
+let timesMetropolitanChanged = 0;
+let timesCountrysideChanged = 0;
 
 // set event listeners 
 tropicalDropdownEl.addEventListener('change', () => {
